@@ -72,7 +72,7 @@ INSERT INTO `students` (`recid`, `nombre`, `grupo`, `id`) VALUES
 (12, 'Calos Santana', 'Default Group', 'kctest00112'),
 (13, 'Jimy Hendrix', 'Default Group', 'kctest00113'),
 (14, 'David Bowie', 'Default Group', 'kctest00114'),
-(15, 'Jim Croce', 'Default Group', 'kctest00115'),
+(15, 'Jim Croce', 'Default Group', 'kctest00115');
 
 --
 -- Indexes for dumped tables

@@ -19,13 +19,24 @@ page, in the bottom of the list
 * MySQL ver 5.7.2
 * Bootsrap framework ver 4.4
 * Jquery 3.5
+* Recommended WAMP for Windows or MAMP for IOS, to run locally
 
 ### Installation Notes
-Just git clone from the repository.
-Create the database.
-Import the SQL file, from phpadmin, or MySql command line.
-And run it from a local o remote server.
-The administrator credetialsa are:
-User: ADMIN
-Password: 123456
+To install this web application locally in your computer, please follow the next steps:
 
+1. Clone the app from Github : repository https://github.com/caribesoft/kctest clone the repository, or
+from your termianl type the following command: gh repo clone caribesoft/kctest.
+2. Configure your PHP/MySql server locallly, (recommended WAMP for Windows or MAMP for IOS)
+3. Create the database named: knowledge
+4. Create your tables, with the SQL command from PHPADMIN, open and copy file: /database/hnowledge.sql
+5. Configure the Mysql connection: open /class/MYSQL.php file and update the following parameters:
+	private $server = "mysql:host=127.0.0.1;dbname=knowledge";
+	private $user = "root";
+	private $password = "secret";
+6. Create your tables, with the SQL command from PHPADMIN, open and copy file: /database/hnowledge.sql
+7. Start your Apache / PHP / Msql server 
+8. In you browser type: http://localhost:8888/
+9. You will see the login screen, please use the following user creentials:
+		User: ADMIN
+		Password: 123456
+10. You will see the USER LIST
