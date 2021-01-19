@@ -40,3 +40,7 @@ from your termianl type the following command: gh repo clone caribesoft/kctest.
 		User: ADMIN
 		Password: 123456
 10. You will see the USER LIST
+
+### VIEW LIVE DEMO:
+You can view a live demo at:  http://caribesoft.net/kctest/
+
