@@ -12,6 +12,7 @@
 
    	// LOGIN VALIDATION ///
 	$(".validate_login").click(function(e){
+
 			var user 	 = $("#username").val();
 			var passcode = $("#passcode").val();
 				
@@ -31,11 +32,11 @@
 					$("#passcode").css("border","2px solid #FF0000").focus();
 					return false;
 			}
-				
+			
 			e.preventDefault();
 				$.ajax({
 					url: "./control.php",
-					 data: "user=" + user + "&passcode=" + passcode + "",
+					 data: "username=" + user + "&passcode=" + passcode + "",
 			 		 dataType: 'json',   
 					 type: "POST",
 						cache: false,

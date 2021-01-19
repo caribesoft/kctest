@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `api_users` (
-  `recid` int(10) NOT NULL,
+  `recid` int(10) NOT NULL,  NOT NULL AUTO_INCREMENT,
   `user` varchar(100) DEFAULT NULL,
   `nombre` varchar(50) DEFAULT NULL,
   `passcode` varchar(30) DEFAULT NULL
@@ -47,9 +47,9 @@ INSERT INTO `api_users` (`recid`, `user`, `nombre`, `passcode`) VALUES
 --
 
 CREATE TABLE `students` (
-  `recid` int(3) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `grupo` varchar(50) NOT NULL,
+  `recid` int(3) NOT NULL, NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `group` varchar(50) NOT NULL,
   `id` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -57,7 +57,7 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`recid`, `nombre`, `grupo`, `id`) VALUES
+INSERT INTO `students` (`recid`, `name`, `group`, `id`) VALUES
 (1, 'Peter Smith', 'Default Group', 'kctest00101'),
 (2, 'Jim Sanders', 'Default Group', 'kctest00102'),
 (3, 'Roger Waters', 'Default Group', 'kctest00103'),
