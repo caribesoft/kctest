@@ -13,7 +13,7 @@
             try {
                 console.log("Verify session")
                 $.ajax({
-                    url: 'seguridad.php',
+                    url: 'check_sess.php',
                     type: 'get',
                     dataType: 'JSON',
                     success: function(data){
