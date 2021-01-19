@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `api_users` (
   `recid` int(10) NOT NULL,  NOT NULL AUTO_INCREMENT,
   `user` varchar(100) DEFAULT NULL,
-  `nombre` varchar(50) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
   `passcode` varchar(30) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
